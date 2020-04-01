@@ -85,10 +85,11 @@ if (symbols == null) {
 
 //Create a function that calls thegeneratePassword() and displays the result on the textarea
 function writePassword() {
-  
+
+  document.body.style.background = "hsl(360, 91% , 36%);";
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  document.body.style.background = "#f9fbfd";
+  document.body.style.background = "forestgreen";
   passwordText.value = password;
 };
 
